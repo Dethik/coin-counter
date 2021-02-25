@@ -1,8 +1,8 @@
-# _{README Template}_
+# _Coin Combinations_
 
-#### _{Short Description}_
+#### _Convert your cents to coins!_
 
-#### By _**Jo Miller**_
+#### By _**Jo Miller, Andy Lawson, Zack Rutledge**_
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## Description
 
-_{Detailed description of application}_
+_A program that lets a user enter an amount of cents and shows the smallest number of quarters, dimes, nickels, and pennies needed to make that change._
 
 ---
 
@@ -38,4 +38,6 @@ _{Detailed description of application}_
 
 ## Contact Information
 
-_Jo Miller: joannadawnmiller@gmail.com_
+_Jo Miller: joannadawnmiller@gmail.com_ <br>
+_Andy Lawson: alawson89@gmail.com_ <br>
+_Zack Rutledge: thorgrim88@gmail.com_
