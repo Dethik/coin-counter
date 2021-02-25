@@ -1,52 +1,53 @@
 class Money
-  # cents = gets.chomp.to_i
-  def converter(cents)
-    quarters(cents)
-    # puts "You have #{quarters} Quarters, #{dimes} Dimes, #{nickles}, and #{pennies} Pennies."
+  def initialize()
+    @quarters = 0
+    @dimes = 0
+    @nickles = 0
+    @pennies = 0
   end
-
+  def converter(cents)
+    cents = cents
+    quarters(cents)
+    puts "You have #{@quarters} Quarters, #{@dimes} Dimes, #{@nickles} Nickles, and #{@pennies} Pennies."
+  end
   def quarters(cents)
-    quarters = 0
     until cents < 25 do
       cents -= 25
-      quarters += 1
+      @quarters += 1
     end
     if cents > 0
       dimes(cents)
     end
-    quarters
+    @quarters
   end
 
   def dimes(cents)
-    dimes = 0
     until cents < 10 do
       cents -= 10
-      dimes += 1
+      @dimes += 1
     end
     if cents > 0
       nickles(cents)
     end
-    dimes
+    @dimes
   end
 
   def nickles(cents)
-    nickles = 0
     until cents < 5 do
       cents -= 5
-      nickles += 1
+      @nickles += 1
     end
     if cents > 0
       pennies(cents)
     end
-    nickles
+    @nickles
   end
 
   def pennies(cents)
-    pennies = 0
     until cents < 1 do
       cents -= 1
-      pennies += 1
+      @pennies += 1
     end
-    pennies
+    @pennies
   end
 end
