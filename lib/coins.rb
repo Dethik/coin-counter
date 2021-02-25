@@ -28,27 +28,25 @@ class Money
     end
     dimes
   end
-  
+
   def nickles(cents)
     nickles = 0
     until cents < 5 do
       cents -= 5
       nickles += 1
     end
-    nickles
     if cents > 0
       pennies(cents)
     end
     nickles
   end
-  # binding.pry
-  
+
   def pennies(cents)
-    pennies = 0
-    until cents < 1 do
-      cents -= 1
-      pennies += 1
-    end
-    pennies
-  end
+  #   pennies = 0
+  #   until cents < 1 do
+  #     cents -= 1
+  #     pennies += 1
+  #   end
+  #   pennies
+  # end
 end

@@ -15,4 +15,10 @@ describe(Money) do
       expect(conversion.dimes(10)).to(eq(1))
     end
   end
+  describe("#nickles") do
+    it("returns number of nickles contained within user input") do
+      conversion = Money.new()
+      expect(conversion.nickles(5)).to(eq(1))
+    end
+  end
 end
