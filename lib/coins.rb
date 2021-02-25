@@ -42,11 +42,11 @@ class Money
   end
 
   def pennies(cents)
-  #   pennies = 0
-  #   until cents < 1 do
-  #     cents -= 1
-  #     pennies += 1
-  #   end
-  #   pennies
-  # end
+    pennies = 0
+    until cents < 1 do
+      cents -= 1
+      pennies += 1
+    end
+    pennies
+  end
 end
