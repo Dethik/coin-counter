@@ -1,21 +1,20 @@
 class Money
   # cents = gets.chomp.to_i
   def converter(cents)
-    quarters(cents)
+    quarters = 0
+    quarters(cents, quarters)
     # dimes(cents)
     # nickles(cents)
     # pennies(cents)
   end
 
   private
-    def quarters(cents)
-      quarters = 0
+    def quarters(cents, quarters)
       until cents < 25 do
         cents -= 25
         quarters += 1
       end
-      quarters
-      # cents
+      results = [cents, quarters]
     end
 
   private
@@ -26,7 +25,6 @@ class Money
         dimes += 1
       end
       dimes
-      # cents
     end
 
   private
